@@ -14,16 +14,9 @@ body {
 
 /********* 버튼 **********/
 .btn-outline-dark {
+  border-radius: 5px;
   padding: 0.3rem 1rem;
   font-weight: 600;
-}
-
-.fc-bl {
-  color: #000 !important;
-}
-
-.fc-wh {
-  color: #fff !important;
 }
 
 /* *******  배너  **********/
@@ -63,29 +56,6 @@ body {
   padding-top: 15rem;
 }
 
-/* main-top */
-.main-top-imgBox {
-  /* padding: 0;
-  border: 1px solid red; */
-  /* margin: 0 4px; */
-}
-
-.main-top-imgBox img {
-  width: 100%;
-}
-
-.main-top-imgHover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-.main-top-imgBox:hover .main-top-imgHover {
-  opacity: 1;
-}
-
 /***************** MAIN center  *************************/
 .kk {
   max-height: 80rem;
@@ -114,27 +84,44 @@ body {
 }
 /* w컨셉 퍼온 소스 */
 .brand {
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 16px;
   margin: 0 0 7px 0 !important;
-  font-weight: 600;
-  color: #333;
+
+  /* width: auto;
+  min-height: auto;
+  max-height: initial;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
+}
+@media (max-width: 1599px) {
+  .brand {
+    width: 1240px;
+  }
 }
 
 .product {
   margin-top: 8px;
   font-size: 12px;
-  color: #888;
+}
+.product {
+  height: 32px;
 }
 
+/* .text-max {
+  overflow: hidden;
+  height: 129px;
+}
+.text_wrap {
+  height: auto;
+} */
 .price {
   position: relative;
-  line-height: 30px;
-  font-size: 16px;
-  color: #333;
+  margin-bottom: 0;
+  line-height: 18px;
 }
 .discount_price {
-  /*그냥 프라이스도 만들어야 됨. */
   font-size: 16px;
   color: #333;
   margin-right: 4px;
@@ -153,28 +140,34 @@ body {
   color: #ff4000;
 }
 
+.labels {
+  /* 개발자가 작성했으나 적용 안 된 내용 */
+  margin-bottom: 5px;
+  max-height: 45px;
+
+  /* 적용된 내용 */
+
+  margin-bottom: 0;
+  max-height: 22px;
+  margin-top: 10px;
+}
+.labels.general_info {
+  background: #fff;
+  color: #888;
+  width: auto;
+  text-indent: initial;
+  font-size: 11px;
+  line-height: 14px;
+  padding: 2px 5px;
+  position: relative;
+  min-width: 30px;
+  border: 1px solid #888;
+}
+
 .general_info {
   border: 1px solid #888;
   margin-bottom: 1px !important;
 }
-/* main center women product */
-.main-womenProduct {
-  position: absolute;
-  width: 95%;
-  bottom: -20px;
-  left: 10px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding-left: 5px;
-}
-
-.productList:hover .main-womenProduct {
-  bottom: 0px;
-
-  opacity: 1;
-}
-
 /****************** MAIN bottom banner *********************/
 .main-bottom-banner {
   background-color: #f1f1f1;
@@ -240,8 +233,8 @@ body {
 }
 #notice a {
   text-decoration: none;
-  color: #333;
-  font-size: small;
+  color: #000;
+  font-size: medium;
   position: relative;
   display: block;
   padding: 0.3rem 0;
