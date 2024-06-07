@@ -1,3 +1,4 @@
+/****** general  ******/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,16 +12,14 @@ body {
     "나눔바른고딕", Malgun Gothic, "맑은 고딕", dotum, sans-serif;
 }
 
-/****** general  ******/
-
-/********* 버튼 **************/
+/********* 버튼 **********/
 .btn-outline-dark {
   border-radius: 5px;
   padding: 0.3rem 1rem;
   font-weight: 600;
 }
 
-/* *******  배너  ********* */
+/* *******  배너  **********/
 
 .banner-imgBox {
   width: 100%;
@@ -58,17 +57,123 @@ body {
 }
 
 /***************** MAIN center  *************************/
+.kk {
+  max-height: 80rem;
+}
+.aa {
+  /* padding: 0 3rem 3rem 0; */
+  width: 100%; /*뷰티섹션 왼쪽 큰박스*/
 
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.cc {
+  width: 100%; /*뷰티섹션 오른 쪽 작은 박스들*/
+  object-fit: contain;
+}
+
+.dd {
+  width: 100%; /*뷰티섹션 오른 쪽 작은 박스들*/
+  max-height: 25rem;
+}
 .main-center-Text {
   font-size: 3.2rem;
   font-weight: 500;
   color: black;
 }
+/* w컨셉 퍼온 소스 */
+.brand {
+  /* font-size: 14px; */
+  /* line-height: 16px; */
+  margin: 0 0 7px 0 !important;
+  /* font-family: "ProximaNova-Semibold", "NotoSansKR-Medium"; */
+  /* width: auto; */
+  min-height: auto;
+  /* max-height: initial; */
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  /* overflow: hidden; */
+}
+@media (max-width: 1599px) {
+  .brand {
+    width: 1240px;
+  }
+}
 
+.product .multiline {
+  /* margin-top: 8px; */
+}
+.product.multiline {
+  /* height: 32px; */
+}
+
+.text-max {
+  /* overflow: hidden; */
+  /* height: 129px; */
+}
+.text_wrap {
+  /* height: auto; */
+}
+.price {
+  position: relative;
+  /* margin-bottom: 0; */
+  /* line-height: 18px; */
+}
+.discount_price {
+  /* font-family: "ProximaNova-Semibold"; */
+  /* font-size: 16px; */
+  color: #333;
+  /* margin-right: 4px; */
+}
+.base_price {
+  /* font-size: 12px; */
+  color: #aaa;
+  text-decoration: line-through;
+}
+.discount_rate {
+  /* display: block; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* font-family: "ProximaNova-Semibold"; */
+  font-size: 16px;
+  color: #ff4000;
+}
+
+.labels {
+  /* 개발자가 작성했으나 적용 안 된 내용 */
+  margin-bottom: 5px;
+  max-height: 45px;
+
+  /* 적용된 내용 */
+  /* overflow: hidden; */
+  margin-bottom: 0;
+  max-height: 22px;
+  margin-top: 10px;
+}
+.labels.general_info {
+  background: #fff;
+  color: #888;
+  width: auto;
+  /* text-indent: initial; */
+  font-size: 11px;
+  line-height: 14px;
+  padding: 2px 5px;
+  position: relative;
+  min-width: 30px;
+  border: 1px solid #888;
+}
+
+.general_info {
+  border: 1px solid #888;
+  margin-bottom: 1px !important;
+}
 /****************** MAIN bottom banner *********************/
 .main-bottom-banner {
   background-color: #f1f1f1;
   width: 100%;
+  padding: 1rem 0;
 }
 
 .main-bottom-banner img {
