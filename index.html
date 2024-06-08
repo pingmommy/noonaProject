@@ -7,11 +7,16 @@
       src="https://kit.fontawesome.com/24b14ce19f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
     <title>11CONCEPT</title>
@@ -19,9 +24,21 @@
   <body>
     <header>
       <!-- 최상단 배너 -->
+
       <section>
-        <div class="text-center pt-3 d-block w-100 header-top-bannerBox">
-          <h4>D-50 SUMMER FESTA!!</h4>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><h4>D-5 SUMMER FESTA!!</h4></div>
+            <div class="swiper-slide">
+              <h4>25000원 이상 구매시 무료 배송!</h4>
+            </div>
+            <div class="swiper-slide">
+              <h4>COSMETIC SALE UP TO 40%</h4>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <!---------------캐러셀 ------------------->
@@ -968,5 +985,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
